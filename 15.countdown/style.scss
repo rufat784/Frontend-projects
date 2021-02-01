@@ -1,0 +1,57 @@
+@import "../assets/vars.scss";
+@import "../assets/core.scss";
+
+/* Countdown Timer */
+.gift-img {
+	margin-bottom: 2rem;
+}
+.gift-info h3 {
+	color: $clr-primary-3;
+	text-transform: uppercase;
+}
+.gift-info p {
+    color: $clr-grey-6;
+    margin: 2rem 0;
+}
+.date {
+	color: $clr-grey-5;
+	font-size: 0.85rem;
+}
+@media screen and (min-width: 992px) {
+	.section-center {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: 95vw;
+		place-items: center;
+		gap: 3rem;
+	}
+	.gift-img {
+		margin-bottom: 0;
+	}
+}
+
+
+.deadline {
+	display: flex;
+}
+.deadline-format {
+	display: grid;
+	width: 5rem;
+	height: 5rem;
+	margin-right: 1rem;
+	color: $clr-white;
+	background: $clr-grey-1;
+	text-align: center;
+	place-items: center;
+}
+.deadline-format span {
+	display: block;
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.deadline h4:not(.expired) {
+	margin-bottom: 0.25rem;
+	font-size: 2rem;
+	letter-spacing: $spacing;
+}

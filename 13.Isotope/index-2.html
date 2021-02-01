@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isotope</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="portfolio-menu">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".mountain">Mountain</li>
+                <li data-filter=".dog">Dog</li>
+                <li data-filter=".light">Light</li>
+
+
+            </ul>
+        </div>
+
+
+        <div class="portfolio-item">
+            <div class="item mountain">
+                <img src="https://picsum.photos/seed/picsum/250/200" alt="">
+            </div>
+            <div class="item dog">
+                <img src="https://picsum.photos/id/237/250/200" alt="">
+            </div>
+            <div class="item light">
+                <img src="https://picsum.photos/id/870/250/200?grayscale&blur=2" alt="">
+            </div>
+            <div class="item mountain">
+                <img src="https://picsum.photos/seed/picsum/250/200" alt="">
+            </div>
+            <div class="item dog">
+                <img src="https://picsum.photos/id/237/250/200" alt="">
+            </div>
+            <div class="item dog">
+                <img src="https://picsum.photos/id/237/250/200" alt="">
+            </div>
+            <div class="item light">
+                <img src="https://picsum.photos/id/870/250/200?grayscale&blur=2" alt="">
+            </div>
+        </div>
+
+    </div>
+    
+<script src="jquery_min.js"></script>
+<script src="isotope.js"></script>
+
+<script>
+    $('.portfolio-item').isotope({
+        itemSelector:'.item',
+        layoutMode:'fitRows'
+    });
+
+    
+    $('.portfolio-menu ul li').click(function(){
+        $('.portfolio-menu ul li').removeClass('active');
+        $(this).addClass('active');
+    
+    let selector = $(this).attr('data-filter');
+    $('.portfolio-item').isotope({
+        filter:selector
+    });
+    return false
+});
+</script>
+
+</body>
+</html>

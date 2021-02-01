@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weight Converter</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <h1 class="display-4 text-center mb-3">Weight Converter</h1>
+          <form>
+            <div class="form-group">
+              <input autofocus="autofocus" id="kqInput" type="number" class="form-control form-control-lg" placeholder="Enter kilograms...">
+            </div>
+          </form>
+          <div id="output">
+            <div class="card bg-primary mb-2">
+              <div class="card-body">
+                <h4>Grams:</h4>
+                <div id="gramsOutput"></div>
+              </div>
+            </div>
+            <div class="card bg-danger mb-2">
+              <div class="card-body">
+                <h4>Ounces:</h4>
+                <div id="ozOutput"></div>
+              </div>
+            </div>
+            <div class="card bg-success mb-2">
+              <div class="card-body">
+                <h4>Pounds:</h4>
+                <div id="pOutput"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
