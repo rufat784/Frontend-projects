@@ -1,0 +1,39 @@
+@import '../assets/vars.scss';
+@import '../assets/core.scss';
+
+main {
+  display: flex;
+  background-color: rgba(71, 255, 154, 0.527);
+}
+
+.empty {
+  position: relative;
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: solid 3px salmon;
+  background-color: $clr-white;
+  &.hovered {
+    background-color: #f4f4f4;
+    border-style: dashed;
+  }
+  .fill {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    cursor: move;
+    border: solid 3px $clr-white;
+    background-repeat: no-repeat;
+    background-image: url('https://picsum.photos/160/160');
+    &.hold {
+      border: solid 5px yellow;
+    }
+  }
+}
+
+.invisible {
+  display: none;
+}
