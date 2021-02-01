@@ -1,0 +1,31 @@
+@import '../assets/vars.scss';
+@import '../assets/core.scss';
+
+.container{
+    text-align: center;
+};
+#value{
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.btn {
+	display: inline-block;
+	padding: 0.3rem 0.7rem;
+	margin: 0.5rem;
+	border: 2px solid $clr-black;
+	border-radius: $radius;
+	color: $clr-black;
+	background-color: transparent;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	letter-spacing: $spacing;
+	transition: $transition;
+	cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	&:hover {
+		color: $clr-white;
+		background-color: $clr-black;
+	}
+}
+
