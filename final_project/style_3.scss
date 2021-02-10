@@ -1,0 +1,382 @@
+@import '../assets/vars.scss';
+@import '../assets/core2.scss';
+// font-family: 'Roboto', sans-serif;
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+@mixin DSIlogo {
+    img{
+        display: inline;
+    }
+    span{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 48px;
+        height: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.015em;
+        color: rgba(38, 50, 56, 0.8);
+        margin-left: 70px;
+        margin-top: -23px;
+        padding-top: 6px;
+    }}
+body{
+    background-color: white;;
+    line-height: 0%;
+}
+nav {
+    height: 112px;
+	background-color: $clr-white;
+	box-shadow: $light-shadow;
+	.nav-center {
+		max-width: $max-width;
+		padding: 1rem;
+		margin: 0 auto;
+    }
+
+    .nav-header{
+        margin-top: 15px;
+        @include DSIlogo;
+    }
+    .navbtn{
+        display: none;
+    }
+    .mobile_nav_links{
+        display: none;
+    }
+
+    .links {
+        img{
+            transition: $transition;
+            cursor: pointer;
+            &:hover{
+                transform: rotate(-90deg);
+            }
+        }
+        color: rgba(31, 46, 53, 0.8);
+        transition: $transition;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 5px;
+        margin-left: 240px;
+		display: flex;
+		a {
+            display: block;
+			color: rgba(31, 46, 53, 0.8);
+            font-size: 18px;
+            margin-right: 40px;
+			letter-spacing: $spacing;
+            transition: $transition;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+			&:hover {
+                color: white;
+                background-color:#EE4248;;
+                border-radius: 3px;
+			}
+        }
+        .arrow{
+            transition: $transition;
+            overflow: hidden;
+            height: 0;
+            margin-top: 10px;
+            &.show-links {
+                height: 10rem;
+            }
+        }
+        .arrow1{
+            transition: $transition;
+            overflow: hidden;
+            height: 0;
+            margin-top: 10px;
+            &.show-links {
+                height: 10rem;
+            }
+        }
+    }
+
+}
+.icons {
+    margin-top: -64px;
+    margin-left: 1130px;
+    display: flex;
+    a {
+        margin: 0 0.5rem;
+    }
+}
+main{
+
+    .tab{
+        margin-top: 38px;
+        background-color: rgba(255, 255, 255, 0.65);
+        .p1{
+            width: 700px;
+            height: 190px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 140.69%;
+            color: #30444E;
+            margin-top: 100px;
+            margin-left: 113px;
+        }
+        .team{
+             margin-left: 730px;
+             margin-top: -245px;
+        }
+        .red_line2{
+            display: none;
+        }
+        .dots{
+            margin-top: -190px;
+        }
+        .p2{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 40.69%;
+            margin-top: 70px;
+            margin-left: 607px;
+            color: #263238;
+        }
+        .line{
+            margin-left: 676px;
+          
+        }
+    }
+    .bank_tabungan{
+        height: 526px;
+        background-color: #F7F7F7;
+        margin-top: 50px;
+        img{
+            margin-top: 199px;
+            margin-left: 165px;
+        }
+        .header{
+            width: 332px;
+            height: 45px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 140.69%;
+            color: #263238;
+            margin-left: 705px;
+            margin-top: -280px;
+        }
+        .text{
+            width: 570px;
+            height: 409px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            color: #263238;
+            margin-left: 705px;
+        }
+    }
+    .bank_bpr{
+        height: 835px;
+        .span{
+            margin-top: 40px;
+            width: 570px;
+            height: 177px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            color: #263238;
+            margin-left: 705px;
+        }
+        .header{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 140.69%;
+            color: #263238;
+            margin-left: 705px;
+            margin-top: -420px;
+        }
+        img{
+            margin-top: 340px;
+            margin-left: 165px;
+        }
+    }
+    .bank_maspion{
+        height: 500px;
+        background-color: #F6F6F6;
+        display: flex;
+            .text{
+        width: 570px;
+        height: 148px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #263238;
+        margin-left: 117px;
+        margin-top: 49px;
+    }
+    .img{
+        margin-left: 165px;
+        width: 423px;
+        height: 180px;
+        margin-top: 160px;
+    }
+    }
+    .slideshow-container{
+        margin-left: 261px;
+        margin-top: 193px;
+        img{
+          width: 350px;
+          height: 280px;
+          border-radius: 32px 0px;
+        }
+        .slides{
+            display: none;
+        }
+        .text{
+            width: 540px;
+            height: 144px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.2px;
+            color: #373F41;
+            margin-left: 488px;
+            margin-top: -200px;
+        }
+        .prev{
+            margin-left: -200px;
+            color: #EE4248;
+            font-size: 80px;
+            margin-top: -350px;
+            transition:all 0.3s linear; 
+            cursor: pointer;
+            &:hover{
+                color: rgb(167, 22, 94);
+            }
+        }
+        .next{
+            margin-left: 1200px;
+            color: #EE4248;
+            font-size: 80px;
+            margin-top: -390px;
+            cursor: pointer;
+            display: inline;
+            transition:all 0.3s linear;   
+            &:hover{
+                color: rgb(167, 22, 94);
+            }
+        }
+        .fade{
+            animation-name: fade;
+            animation-duration: 0.5s;
+        }
+
+    }
+
+}
+footer{
+    margin-top: 154px;
+    margin-left: 157px;
+    display: flex;
+    .adress{
+        margin-top: 15px;
+        @include DSIlogo();
+        .p1{
+            width: 259px;
+            height: 21px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #263238;
+            margin-top: 50px;
+        }
+        .p2{
+            width: 317px;
+            height: 54px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 149.19%;
+            color: #263238;
+            margin-top: -15px;
+        }
+    }
+    .contact_nav{
+        margin-top: 18px;
+        margin-left: 60px;
+        .contact_heading{
+            width: 85px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #263238;;
+        }
+        .contacts_f{
+            width: 269px;
+            height: 81px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 149.19%;
+            color: #263238;
+        }
+    }
+    .social_icons{
+        margin-left: 80px;
+        margin-top: 40px;
+        img{
+            margin-right: 23px;
+        }
+    }
+    
+}
+.the_end{
+    height: 64px;
+    background-color: #EE4248;
+    p{
+        color:white;
+        text-align: center;
+        padding-top: 32px;
+    }
+}
+.scroll-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    background: #EE4248;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}

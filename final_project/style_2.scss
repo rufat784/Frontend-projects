@@ -1,0 +1,424 @@
+@import '../assets/vars.scss';
+@import '../assets/core2.scss';
+// font-family: 'Roboto', sans-serif;
+@mixin DSIlogo {
+    img{
+        display: inline;
+    }
+    span{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 48px;
+        height: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.015em;
+        color: rgba(38, 50, 56, 0.8);
+        margin-left: 70px;
+        margin-top: -23px;
+        padding-top: 6px;
+    }}
+body{
+    background-color: white;;
+}
+nav {
+    height: 112px;
+	background-color: $clr-white;
+	box-shadow: $light-shadow;
+	.nav-center {
+		max-width: $max-width;
+		padding: 1rem;
+		margin: 0 auto;
+    }
+
+    .nav-header{
+        margin-top: 15px;
+        @include DSIlogo;
+    }
+    .navbtn{
+        display: none;
+    }
+    .mobile_nav_links{
+        display: none;
+    }
+
+    .links {
+        img{
+            transition: $transition;
+            cursor: pointer;
+            &:hover{
+                transform: rotate(-90deg);
+            }
+        }
+        color: rgba(31, 46, 53, 0.8);
+        transition: $transition;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 5px;
+        margin-left: 240px;
+		display: flex;
+		a {
+            display: block;
+			color: rgba(31, 46, 53, 0.8);
+            font-size: 18px;
+            margin-right: 40px;
+			letter-spacing: $spacing;
+            transition: $transition;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 21px;
+			&:hover {
+                color: white;
+                background-color:#EE4248;;
+                border-radius: 3px;
+			}
+        }
+        .arrow{
+            transition: $transition;
+            overflow: hidden;
+            height: 0;
+            margin-top: 10px;
+            &.show-links {
+                height: 10rem;
+            }
+        }
+        .arrow1{
+            transition: $transition;
+            overflow: hidden;
+            height: 0;
+            margin-top: 10px;
+            &.show-links {
+                height: 10rem;
+            }
+        }
+    }
+
+}
+.icons {
+    margin-top: -64px;
+    margin-left: 1130px;
+    display: flex;
+    a {
+        margin: 0 0.5rem;
+    }
+}
+main{
+    .main_div{
+        height: 368px;
+        display: flex;
+        background: rgba(242, 242, 242, 0.65);
+        margin-top: 38px;
+        .main_p{
+            margin-top: 82px;
+            margin-left: 160px;
+            width: 700px;
+            height: 204px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 140.69%;
+            color: #30444E;
+        }
+        .main_logo{
+            margin-top: 93px;  
+        }
+    }
+    .text{
+        .text_heading{
+            width: 579px;
+            height: 45px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 140.69%;
+            color: #263238;
+            margin-top: 58px;
+            margin-left: 160px;
+        }
+        .text_line{
+            margin-left: 160px;
+        }
+        #text{
+            width: 1145px;
+            height: 475px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140.69%;
+            text-align: justify;
+            color: #263238;
+            margin-top: 58px;
+            margin-left: 160px;
+        }
+        
+    }
+    .video{
+        .video_text{
+            display: none;
+        }
+        height: 500px;
+        background-color: #F7F7F7;
+        video{
+            margin-left: 154.5px;
+        }
+        p{
+            width: 332px;
+            height: 57px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 25px;
+            letter-spacing: 0.2px;
+            text-transform: capitalize;
+            color: #263238;
+            margin-left: 831px;
+            margin-top: -380px;
+        }
+        .vision_card{   
+            img{
+                margin-left: 832px;
+                display: inline;
+                margin-top: 1px;
+            }
+            .vision{
+                margin-top: -37px;
+                margin-left: 883px;
+            }
+            .vision_text{
+                width: 419px;
+                height: 72px;
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: #263238;
+                margin-top: -40px;
+                margin-left: 883px;
+            }
+        }
+        .mission_card{   
+            
+            img{
+                margin-left: 832px;
+                display: inline;
+            }
+            .mission{
+                margin-top: -30px;
+                margin-left: 883px;
+            }
+            .mission_text{
+                width: 430px;
+                height: 96px;
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 17px;
+                line-height: 24px;
+                letter-spacing: 0.2px;
+                color: #263238;
+                margin-top: -40px;
+                margin-left: 883px;
+            }
+        }
+    }
+    .DSI_culture{
+        .p{
+            width: 161px;
+            height: 25px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 140.69%;
+            color: #FFFFFF;
+            margin-left: 153px;
+            padding-top: 48px;
+        }
+        img{
+            margin-left: 153px;
+            margin-top: 35px;
+        }
+        .culture_text{
+            width: 471px;
+            height: 300px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 140.69%;
+            text-align: justify; 
+            color: #FFFFFF;
+            margin-top: 26px;
+            margin-left: 153px;
+           
+        }
+        .iframe{
+            margin-left: 707px;
+            border-radius: 10px;
+            margin-top: -770px;
+        }
+    }
+    .contacts{
+        p{
+            height: 25px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 140.69%;
+        color: #263238;
+        margin-left: 641px;
+        margin-top: 47px;
+        }
+        img{
+        margin-left: 676px;
+        display: inline;
+        
+        }
+        iframe{
+            margin-left: 160px;
+            margin-top: 38px;
+        }
+        .contacts_grid{
+            margin-left: 164px;
+            margin-top: -440px;
+            img{
+                margin-top: 60px;
+                display: inline;
+            }
+            .contacts_grid1{
+                display: flex;
+            }
+                .span1{
+                    width: 77px;
+                    height: 46px;
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 46px;
+                    text-align: center; 
+                    color: #1F2E35;
+                    margin-left: 37px;
+                    
+                }
+                .span2{
+                    display: inline;
+                    width: 354px;
+                    height: 60px;
+                    font-family: 'Roboto', sans-serif;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 30px;
+                    color: #30444E;
+                    margin-left: -75px;
+                    padding-top: 50px;
+                }
+                .contacts_grid2{
+                    display: flex;
+                }
+                .contacts_grid3{
+                    display: flex;
+                }
+        }
+    }
+
+}
+footer{
+    margin-top: 154px;
+    margin-left: 157px;
+    display: flex;
+    .adress{
+        margin-top: 15px;
+        @include DSIlogo();
+        .p1{
+            width: 259px;
+            height: 21px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #263238;
+            margin-top: 20px;
+        }
+        .p2{
+            width: 317px;
+            height: 54px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 149.19%;
+            color: #263238;
+            margin-top: -15px;
+        }
+    }
+    .contact_nav{
+        margin-top: 18px;
+        margin-left: 60px;
+        .contact_heading{
+            width: 85px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #263238;;
+        }
+        .contacts_f{
+            width: 269px;
+            height: 81px;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 149.19%;
+            color: #263238;
+        }
+    }
+    .social_icons{
+        margin-left: 80px;
+        margin-top: 40px;
+        img{
+            margin-right: 23px;
+        }
+    }
+    
+}
+.the_end{
+    height: 64px;
+    background-color: #EE4248;
+    p{
+        color:white;
+        text-align: center;
+        padding-top: 22px;
+    }
+}
+.scroll-top{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+    background: #EE4248;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px;
+    font-weight: bold;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+

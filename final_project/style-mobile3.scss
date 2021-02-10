@@ -1,0 +1,350 @@
+@import '../assets/vars.scss';
+@import '../assets/core2.scss';
+@keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+}
+// font-family: 'Roboto', sans-serif;
+@mixin DSIlogo {
+    img{
+        display: inline;
+    }
+    span{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 48px;
+        height: 12px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: 0.015em;
+        color: rgba(38, 50, 56, 0.8);
+        margin-left: 70px;
+        margin-top: -23px;
+        padding-top: 6px;
+    }}
+body{
+    background-color: white;
+    // line-height: 0%;
+}
+nav {
+    height:72px;
+    width: 420px;
+	background-color: $clr-white;
+    box-shadow: $light-shadow;
+    &.show-links{
+        box-shadow: none;
+    }
+	.nav-center {
+        .nav-header{
+            padding-top: 18px;
+            @include DSIlogo;
+            margin-left: 24px;
+        }
+        .navbtn{
+            display: block;
+            margin-left: 358px;
+        }
+        .links {
+            display: none;
+        }
+        .mobile_nav_links{
+            display: block;
+		    transition: all 0.5s linear;
+            background-color: $clr-white;
+            margin-top: 25px;
+            max-width: unset;
+			overflow: hidden;
+            height: 0;
+            width: 420px;
+	        box-shadow: $light-shadow;
+            z-index: 9999;
+            position: relative;
+            &.show-links {
+                height: 400px;
+            }
+
+            a {
+                display: block;
+                margin-left: 24px;
+                margin-top: 39px;
+                text-transform: capitalize;
+                letter-spacing: $spacing;
+                font-family: 'Roboto', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                color: rgba(31, 46, 53, 0.8);
+
+            }
+            .iconsnav{
+                display: flex;
+                margin-top: 80px;
+            }
+        }
+    }
+
+}
+.icons {
+    display: none;
+}
+main{
+    .tab{
+        background-color: rgba(255, 255, 255, 0.65);
+        margin-top: 30px;
+        .p1{
+            width: 331px;
+            height: 180px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 140.69%;
+            color: #30444E;
+            margin-left: 40px;
+        }
+        .team{
+            width: 347px;
+            height: 206px;
+            margin-left: 64px;
+        }
+        .red_line{
+            display: none;
+        }
+        .dots{
+            width: 59px;
+            height: 59px;
+            margin-top: -90px;
+            z-index: -1;
+        }
+        .p2{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 140.69%;
+            text-align: center;
+            color: #263238;
+            margin-top: 45px;
+            margin-bottom: 0%;
+        }
+        .line{
+            margin-left: 157px;
+        }
+    }
+    .bank_tabungan{
+        background-color: #F7F7F7;
+        margin-top: 50px;
+        height: 764px;
+        width: 421px;
+        img{
+            width: 332px;
+            height: 77px;
+            margin-left: 40px;
+            margin-top: 50px;
+        }
+        .header{
+            width: 332px;
+            height: 45px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 140.69%;
+            color: #263238;
+            margin-top: 24px;
+            margin-left: 30px;
+        }
+        .text{
+            width: 366px;
+            height: 496px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            margin-left: 30px;
+            color: #263238;
+
+        }
+    }
+    .bank_bpr{
+        height: 1252px;
+        margin-top: 50px;
+        margin-left: 40px;
+        img{
+            width: 332px;
+            height: 114px;
+        }
+        .header{
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 140.69%;
+            color: #263238;
+            margin-top: 24px;
+        }
+        .span{
+            font-family: 'Roboto', sans-serif;
+            color: #263238;
+            width: 344px;
+            height: 264px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            
+            
+        }
+    }
+    .bank_maspion{
+        background-color: #F6F6F6;
+        height: 835px;
+        width: 421px;
+        .img{
+            margin-top: 50px;
+            width: 332px;
+            height: 141px;
+            margin-left: 40px;
+        }
+        .text{
+            width: 351px;
+            height: 264px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 160%;
+            color: #263238;
+            margin-left: 30px;
+            margin-top: 32px;
+        }
+    }
+    .slideshow-container{
+        height: 600px;
+        h2{
+            margin-left: 119px;
+            margin-top: 50px;
+        }
+        .slides{
+            display: none;
+        }
+        div{
+            img{
+                width: 313px;
+                height: 218px;
+                margin-left: 49px;
+                border-radius: 32px 0px;
+                
+            }
+        }
+        .text{
+            width: 334px;
+            height: 216px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 36px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.2px;
+            color: #373F41;
+            margin-left: 49px;
+            margin-top: 93px;
+        }
+        .prev{
+            color: #EE4248;
+            font-size: 70px;
+            margin-top: 150px;
+            margin-left: 17px;
+        }
+        .next{
+            color: #EE4248;
+            font-size: 70px;
+            margin-left: 290px;
+        }
+        .fade{
+            animation-name: fade;
+            animation-duration: 0.5s;
+        }
+    }
+
+}
+footer{
+    margin-top: 112px;
+    .adress{
+        margin-left: 25px;
+        @include DSIlogo();
+        .p1{
+            width: 259px;
+            height: 21px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            color: #263238;
+            margin-top: 14px;
+        }
+        .p2{
+            width: 317px;
+            height: 54px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 149.19%;
+            color: #263238;
+        }
+    }
+    .contact_nav{
+        margin-left: 25px;
+        margin-top: 20px;
+        .contact_heading{
+            width: 85px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            color: #263238;
+        }
+        .contacts{
+            width: 269px;
+            height: 81px;
+            font-family: 'Roboto', sans-serif;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 149.19%;
+            color: #263238;
+            margin-top: 29px;
+            
+        }
+    }
+    .social_icons{
+        margin-left: 5px;
+        img{
+            margin-right: 5px;
+        }
+    }
+}
+.the_end{
+    margin-top: 40px;
+    height: 64px;
+    width: 420px;
+    background-color: #EE4248;
+    p{
+        color:white;
+        text-align: center;
+        padding-top: 22px;
+    }
+}
+.scroll-top{
+    display: none;
+}
